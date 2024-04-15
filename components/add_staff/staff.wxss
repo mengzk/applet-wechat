@@ -1,0 +1,75 @@
+.v-add-staff {
+  top: 0;
+  left: 0;
+  z-index: 993;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.v-add-staff-pop {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-bottom: 20vh;
+  padding: 0 32rpx;
+  border-radius: 24rpx;
+  background-color: white;
+}
+
+.v-add-staff-title {
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 96rpx;
+  text-align: center;
+}
+
+.v-add-staff-cell {
+  display: flex;
+  align-items: center;
+  min-height: 88rpx;
+  margin-bottom: 32rpx;
+  border-bottom: solid 1px #f3f3f3;
+}
+.v-add-staff-phone {
+  height: 180rpx;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  background-color: #f6f6f6;
+}
+.v-add-staff-btn-box {
+  margin: 16rpx 0 24rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.v-add-staff-cancel {
+  flex: 1;
+  color: #232323;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 88rpx;
+  text-align: center;
+
+  margin-right: 16rpx;
+  border-radius: 18rpx;
+  border: solid 2rpx #232323;
+}
+
+.v-add-staff-commit {
+  flex: 1;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 88rpx;
+  text-align: center;
+
+  margin-left: 16rpx;
+  border-radius: 18rpx;
+  background-color: #232323;
+}

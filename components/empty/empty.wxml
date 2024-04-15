@@ -1,0 +1,4 @@
+<view class="v-empty-layout">
+	<image class="v-empty-img" mode="aspectFill" src="{{icon}}" />
+	<view class="v-empty-text">{{msg}}</view>
+</view>

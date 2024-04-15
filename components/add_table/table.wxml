@@ -1,0 +1,30 @@
+<view class="v-add-table">
+  <view class="v-add-table-pop">
+    <text class="v-add-table-title">添加桌位</text>
+    <view class="v-add-table-cell">
+      <text style="min-width: 160rpx;">桌位号</text>
+      <input 
+        placeholder="请输入" 
+        maxlength="10" 
+        type="number" 
+        value="{{item.num}}"
+        bindinput="onInputCode" />
+    </view>
+    <view class="v-add-table-cell">
+      <text style="min-width: 160rpx;">桌位说明</text>
+      <input 
+        placeholder="请输入" 
+        maxlength="30" 
+        value="{{item.intro}}"
+        bindinput="onInputDesc" />
+    </view>
+    <!-- <view class="v-add-table-cell">
+      <text>桌位位置</text>
+      <input placeholder="请输入" />
+    </view> -->
+    <view class="v-add-table-btn-box">
+      <text class="v-add-table-cancel" bindtap="onCancel">取 消</text>
+      <text class="v-add-table-commit" bindtap="onCommit">确 定</text>
+    </view>
+  </view>
+</view>

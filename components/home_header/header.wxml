@@ -1,0 +1,15 @@
+<view class="home-header-bar">
+  <view class="home-header-bar__placeholder {{ios ? 'ios' : 'android'}}" style="padding-top: {{statusBarHeight}}px;visibility: hidden;"></view>
+
+  <view class="home-header-bar__inner {{ios ? 'ios' : 'android'}}" style="padding-top: {{statusBarHeight}}px;">
+    <view class='home-header-bar__left' style="{{leftWidth}}">
+      <image class="home-header-bar_icon" src="{{icon}}"/>
+    </view>
+
+    <view class='home-header-bar__center'>
+      <text>{{title}}</text>
+    </view>
+
+    <view class='home-header-bar__right'></view>
+  </view>
+</view>

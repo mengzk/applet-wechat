@@ -1,0 +1,17 @@
+<view class="v-msg-temp">
+  <view class="v-msg-temp-pop">
+    <view class="v-msg-temp-top">
+      <text class="v-msg-temp-cancel" bindtap="onCancel">取消</text>
+      <text class="v-msg-temp-title">常用消息</text>
+      <text class="v-msg-temp-commit" bindtap="onCommit">确定</text>
+    </view>
+    
+    <view class="v-msg-temp-list">
+      <block wx:for="{{msgList}}" wx:key="item">
+        <view class="v-msg-temp-item v-msg-temp-item{{index == curIndex ? '2':''}}" bindtap="onItemPress" data-idx="{{index}}">
+          <text>{{item.value}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

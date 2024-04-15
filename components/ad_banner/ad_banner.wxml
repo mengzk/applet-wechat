@@ -1,0 +1,7 @@
+<swiper class="v-ad-swiper-box" indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{banners}}" wx:key="item">
+    <swiper-item class="v-ad-swiper-item">
+      <image class="v-ad-swiper-item" src="{{item}}" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>

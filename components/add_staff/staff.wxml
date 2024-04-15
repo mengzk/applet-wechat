@@ -1,0 +1,24 @@
+<view class="v-add-staff">
+  <view class="v-add-staff-pop">
+    <text class="v-add-staff-title">编辑员工信息</text>
+    <view class="v-add-staff-cell">
+      <input 
+        placeholder="请输入姓名" 
+        maxlength="10" 
+        value="{{item.name}}"
+        bindinput="onInputName" />
+    </view>
+    <view class="v-add-staff-cell">
+      <input 
+        placeholder="请输入手机号" 
+        maxlength="11" 
+        type="number" 
+        value="{{item.phone}}"
+        bindinput="onInputPhone" />
+    </view>
+    <view class="v-add-staff-btn-box">
+      <text class="v-add-staff-cancel" bindtap="onCancel">取 消</text>
+      <text class="v-add-staff-commit" bindtap="onCommit">确 定</text>
+    </view>
+  </view>
+</view>

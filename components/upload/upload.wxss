@@ -1,0 +1,25 @@
+.v-upload-img {
+  display: grid;
+  grid-row-gap: 12rpx;
+  grid-column-gap: 12rpx;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3;
+}
+
+.v-upload-item {
+  display: flex;
+  position: relative;
+}
+
+.v-upload-item-img {
+  width: 100%;
+  height: 23vw;
+  border-radius: 12rpx;
+  background-color: #f3f3f3;
+}
+
+.v-upload-item-icon {
+  width: 100%;
+  height: 23vw;
+  border-radius: 12rpx;
+}

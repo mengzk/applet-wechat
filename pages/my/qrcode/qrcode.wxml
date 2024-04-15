@@ -1,0 +1,7 @@
+<view class="container user-qrcode">
+  <!-- <canvas type="2d" id="qrcode_cv"></canvas> -->
+  <view class="user-qrcode-box" bindlongtap="onSaveImg">
+    <canvas class="user-qrcode-icon" canvas-id="qrcode_cv" id="qrcode_cv" />
+  </view>
+  <text class="qrcode-save-hint">长按二维码可以保存到相册哦</text>
+</view>

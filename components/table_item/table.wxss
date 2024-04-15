@@ -1,0 +1,62 @@
+.v-table-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx 24rpx;
+  border-radius: 16rpx;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.v-table-item-row {
+  display: flex;
+}
+.v-table-item-code {
+  flex: 1;
+  color: #232323;
+  font-size: 32rpx;
+  font-weight: 600;
+  text-align: center;
+}
+
+.v-table-item-use {
+  color: #00b42a;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.v-table-item-use1 {
+  color: #979797;
+  font-size: 26rpx;
+  font-weight: 400;
+}
+.v-table-state {
+  color: #00b42a;
+  font-size: 28rpx;
+  font-weight: 600;
+  /* border-radius: 6rpx;   */
+  /* background-color: #f2463a1a; */
+}
+
+.v-table-state2 {
+  color: #f2453a;
+  font-size: 28rpx;
+  font-weight: 600;
+  /* border-radius: 6rpx;   */
+  /* background-color: #f2463a1a; */
+}
+
+.v-table-msg-box {
+  display: flex;
+  min-height: 48rpx;
+  max-height: 48rpx;
+  padding-top: 32rpx;
+  align-items: baseline;
+}
+.v-table-item-msg {
+  color: #ff6600;
+  font-size: 28rpx;
+  margin-left: 8rpx;
+  max-width: 38vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}

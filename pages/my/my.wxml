@@ -1,0 +1,46 @@
+<view class="container my">
+  <!-- 顶部栏 -->
+  <view class="account-box">
+    <image class="account-icon" bindtap="getUserProfile" src="{{user.icon}}" />
+    <view class="column account-info" bindtap="onUserInfo">
+      <text class="account-name">{{user.nickname}}</text>
+      <text class="account-phone">{{user.phoneStr}}</text>
+    </view>
+    <view class="flex" />
+    <view class="row center vip-code" bindtap="gotoQrcode">
+      <image class="vip-icon" src="/assets/icon/vip_code.png" />
+      <text class="vip-str">二维码</text>
+    </view>
+  </view>
+  <!-- tab -->
+  <view wx:if="{{topData.show}}" class="row tab-box">
+    <view class="column center tab-view" data-idx="0" bindtap="onTabClick">
+      <text class="tab-num">{{topData.point}}</text>
+      <text class="tab-value">积分</text>
+    </view>
+    <view class="column center tab-view" data-idx="1" bindtap="onTabClick">
+      <text class="tab-num">{{topData.coupon}}</text>
+      <text class="tab-value">优惠券</text>
+    </view>
+    <view class="column center tab-view" data-idx="2" bindtap="onTabClick">
+      <text class="tab-num">{{topData.card}}</text>
+      <text class="tab-value">会员卡</text>
+    </view>
+  </view>
+  <!-- 优惠券领取 -->
+  <view class="activity-box" bindtap="gotoCoupon">
+    <image class="activity-img" mode="widthFix" src="{{bannerUrl}}"/>
+  </view>
+  <!-- 内容列表 -->
+  <view class="row label-box">
+    <text class="flex label-name">我的服务</text>
+  </view>
+  <view class="menu-list">
+    <block wx:for="{{menulist}}" wx:key="index">
+      <view class="column center menu-box" bindtap="onMenuClick" data-idx="{{index}}">
+        <image class="menu-icon" src="{{item.icon}}" />
+        <view class="menu-value">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>

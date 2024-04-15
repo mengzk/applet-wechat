@@ -1,0 +1,40 @@
+.home {
+  width: 100vw;
+}
+.h-top-alert {
+  width: 96vw;
+  height: 88rpx;
+  margin: 0 2vw;
+
+  top: 0;
+  left: 0;
+  z-index: 97;
+  border-radius: 12rpx;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #FFC900;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.h-top-alert-str {
+  color: #232323;
+  font-size: 28rpx;
+  font-weight: 500;
+  max-width: 90vw;
+  margin: 0 24rpx;
+  
+}
+.home-list {
+  display: grid;
+  padding: 0 12px;
+  grid-gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.home-item {
+  /* height: 130rpx; */
+  padding: 24rpx 24rpx;
+  border-radius: 16rpx;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}

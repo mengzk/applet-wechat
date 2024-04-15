@@ -1,0 +1,10 @@
+<view class="page">
+  
+  <view class="label">反馈标题</view>
+  <input class="input" maxlength="20" placeholder="请输入标题20个字以内" bindinput="onTitle"/>
+
+  <view class="label">反馈内容</view>
+  <textarea class="inputs" maxlength="300" placeholder="反馈内容300字以内" bindinput="onContent"/>
+
+  <view class="btn" bindtap="onCommit">提 交</view>
+</view>

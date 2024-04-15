@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="login-layout">
+    <view class="login-title">欢迎使用 E呼</view>
+
+    <text class="login-alert">登录即代表您已阅读并同意<text style="color: #232323; font-weight: 600;">《用户协议》</text></text>
+
+    <view wx:if="{{!usePhone}}" class="column">
+      <button wx:if="{{canIUseProfile}}" style="{{btnStyle}}" class="login-button2" type="default" bindtap="getUserProfile">微信一键登录</button>
+      <button wx:else style="{{btnStyle}}" class="login-button2" type="default" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信一键登录</button>
+
+      <!-- <view class="login-button" bindtap="onCutLoginType">手机验证码登录</view> -->
+    </view>
+
+    <view wx:else class="column">
+      <input class="login-input" type="number" maxlength="11" bindinput="bindInputPhone" placeholder="请输入手机号" />
+
+      <view class="login-input login-code">
+        <input class="login-input-code" type="number" maxlength="6" bindinput="bindInputPwd" placeholder="请输入验证码" />
+        <text class="code-btn">验证码</text>
+      </view>
+
+      <view class="login-button3" bindtap="onLogin" hover-class="hover">登 录</view>
+    </view>
+
+    <text class="login-hint">未注册用户，系统将自动为您注册</text>
+
+    <!-- <view class="login-action-layout">
+      <view class="login-action-view" bindtap="gotoPwd">忘记密码</view>
+      <view class="login-action-view" bindtap="gotoRegister">注册</view>
+    </view> -->
+  </view>
+</view>

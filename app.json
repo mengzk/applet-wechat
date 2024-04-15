@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/my/about/about",
+    "pages/my/login/login",
+    "pages/my/qrcode/qrcode",
+    "pages/my/setting/setting",
+    "pages/my/feedback/feedback",
+    "pages/shop/register/register",
+    "pages/shop/staff/staff",
+    "pages/shop/table/table",
+    "pages/shop/msgs/msgs",
+    "pages/shop/table_qrcode/qrcode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#979797",
+    "selectedColor": "#232323",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "/assets/icon/tab_home_off.png",
+        "selectedIconPath": "/assets/icon/tab_home_on.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "/assets/icon/tab_my_off.png",
+        "selectedIconPath": "/assets/icon/tab_my_on.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 30000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于选择商家门店地址"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

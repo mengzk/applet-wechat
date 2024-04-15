@@ -1,0 +1,7 @@
+<view class="v-tab-box">
+  <block wx:for="{{tabs}}" wx:key="item">
+    <view class="v-tab-view" bindtap="onChangeTab" data-index="{{index}}">
+      <text class="{{index == tabIndex ? 'v-tab-v2': ''}}">{{item}}</text>
+    </view>
+  </block>
+</view>

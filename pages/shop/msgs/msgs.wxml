@@ -1,0 +1,19 @@
+<view class="container event">
+
+<view class="event-list">
+  <block wx:for="{{eventList}}" wx:key="item">
+    <view class="column event-item"
+        bindtap="onEditEvent"
+        data-item="{{item}}">
+      <text class="event-value">{{item.value}}</text>
+      <text class="event-desc">{{item.intro||''}}</text>
+    </view>
+  </block>
+</view>
+
+<empty wx:if="{{eventList.length < 1}}" msg="还没有店员，赶快添加哦"/>
+
+<view class="float-btn" bindtap="onCommit">+</view>
+
+<add_event wx:if="{{showPop}}" item="{{editItem}}" bindcommit='onEventInput' />
+</view>

@@ -1,0 +1,24 @@
+<view class="v-add-event">
+  <view class="v-add-event-pop">
+    <text class="v-add-event-title">添加消息模版</text>
+    <view class="v-add-event-cell">
+      <input 
+        placeholder="请输入消息简称" 
+        maxlength="10" 
+        value="{{item.value}}"
+        bindinput="onInputTitle" />
+    </view>
+    <view class="v-add-event-cell">
+      <textarea 
+      class="v-add-event-input-intro"
+        placeholder="请输入消息模版信息" 
+        maxlength="50" 
+        value="{{item.intro}}"
+        bindinput="onInputDesc" />
+    </view>
+    <view class="v-add-event-btn-box">
+      <text class="v-add-event-cancel" bindtap="onCancel">取 消</text>
+      <text class="v-add-event-commit" bindtap="onCommit">确 定</text>
+    </view>
+  </view>
+</view>

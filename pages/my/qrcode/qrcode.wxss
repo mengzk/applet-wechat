@@ -1,0 +1,22 @@
+.user-qrcode {
+  align-items: center;
+  justify-content: center;
+}
+
+.user-qrcode-box {
+  padding: 32rpx;
+  border-radius: 16rpx;
+  background-color: white;
+}
+
+.user-qrcode-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.qrcode-save-hint {
+  color: #979797;
+  font-size: 24rpx;
+  margin-top: 32rpx;
+  margin-bottom: 200rpx;
+}

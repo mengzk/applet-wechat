@@ -1,0 +1,19 @@
+.v-tab-box {
+  display: flex;
+  margin: 0 32rpx;
+  overflow-x: scroll;
+  align-items: center;
+}
+.v-tab-v2 {
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.v-tab-view {
+  min-width: 48rpx;
+  color: #676767;
+  font-size: 30rpx;
+  line-height: 96rpx;
+  padding-right: 48rpx;
+  /* background-color: beige; */
+}

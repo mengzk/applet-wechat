@@ -1,0 +1,12 @@
+<view class="v-table-item">
+  <view class="v-table-item-row">
+    <text wx:if="{{item.status == 0}}" class="v-table-state" bindtap="onChangeStatus">已收桌</text>
+    <text wx:else class="v-table-state2" bindtap="onChangeStatus">待收桌</text>
+    <text class="v-table-item-code">{{item.num}}号桌</text>
+    <view wx:if="{{item.used == 1}}" class="v-table-item-use" bindtap="onChangeUse">有客</view>
+    <view wx:else class="v-table-item-use v-table-item-use1" bindtap="onChangeUse">无客</view>
+  </view>
+  <view class="v-table-msg-box" bindtap="onTablePress">
+    <text class="v-table-item-msg">{{newMsg.data}}</text>
+  </view>
+</view>

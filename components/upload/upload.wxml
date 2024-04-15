@@ -1,0 +1,8 @@
+<view class="v-upload-img">
+  <block wx:for="{{list}}" wx:key="item">
+    <view class="v-upload-item">
+      <image class="v-upload-item-img" src="{{item}}"/>
+    </view>
+  </block>
+  <image wx:if="{{list.length < max}}" class="v-upload-item-icon" src="{{icon}}" bindtap="onChooseImg"/>
+</view>

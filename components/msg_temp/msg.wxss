@@ -1,0 +1,76 @@
+.v-msg-temp {
+  top: 0;
+  left: 0;
+  z-index: 993;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.v-msg-temp-pop {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0 32rpx;
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  background-color: white;
+}
+
+.v-msg-temp-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.v-msg-temp-title {
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 96rpx;
+  text-align: center;
+}
+
+.v-msg-temp-list {
+  min-height: 200rpx;
+  max-height: 500rpx;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.v-msg-temp-item {
+  height: 40rpx;
+  margin-right: 24rpx;
+  margin-bottom: 24rpx;
+  padding: 12rpx 24rpx;
+  border-radius: 18rpx;
+  border: solid 1px #d3d3d3;
+  color: #676767;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.v-msg-temp-item2 {
+  color: #232323;
+  /* background-color: #232323; */
+  border: solid 1px #232323;
+}
+
+.v-msg-temp-cancel {
+  color: #323232;
+  font-size: 32rpx;
+  line-height: 88rpx;
+  padding: 12rpx 20rpx 12rpx 0;
+}
+
+.v-msg-temp-commit {
+  color: #232323;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 88rpx;
+  padding: 12rpx 0 12rpx 20rpx;
+}

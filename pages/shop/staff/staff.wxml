@@ -1,0 +1,25 @@
+<view class="container staff">
+
+  <view class="staff-list">
+    <block wx:for="{{staffList}}" wx:key="item">
+      <view class="row staff-item" 
+      bindtap="onCallPhone" 
+      bindlongpress="onEditStaff" 
+      data-item="{{item}}">
+        <view class="staff-icon">
+        </view>
+        <view class="column">
+          <text class="staff-name">{{item.name}}</text>
+          <text class="staff-phone">{{item.phone||'-'}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <empty wx:if="{{staffList.length < 1}}" msg="还没有店员，赶快添加哦" />
+
+  <!-- <button class="float-btn" style="{{style}}" open-type="share" bindtap="onAddUser">+</button> -->
+  <view class="float-btn" bindtap="onAddUser">+</view>
+
+  <add_staff wx:if="{{showPop}}" item="{{editItem}}" bindcommit='onInputStaff' />
+</view>

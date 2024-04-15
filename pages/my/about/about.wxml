@@ -1,0 +1,13 @@
+<!--  -->
+<view class="ab-container">
+  <image class="ab-img" src="/assets/icon/user_ic.png" />
+  <view class="ab-box">
+    <text class="ab-text">巧合皆为宿命，偶然亦是必然。</text>
+    <text class="ab-text">处处有惊喜，次次都有你。</text>
+  </view>
+
+  <view class="ab-box" style="margin-top: 48rpx; align-items: flex-end;">
+    <text class="ab-text">Meng</text>
+    <text class="ab-email">umxkz@qq.com</text>
+  </view>
+</view>

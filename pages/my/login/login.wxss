@@ -1,0 +1,103 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.login-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 64rpx;
+  border-radius: 24rpx;
+}
+
+.login-input {
+  color: #232323;
+  font-size: 32rpx;
+  height: 96rpx;
+  padding: 0 32rpx;
+  margin-bottom: 24rpx;
+  border-radius: 48rpx;
+  background-color: #f3f3f3;
+}
+
+.login-input-code {
+  flex: 1;
+  height: 96rpx;
+}
+
+.login-code {
+  display: flex;
+  align-items: center;
+}
+
+.code-btn {
+  height: 56rpx;
+  padding: 0 26rpx;
+  border-radius: 28rpx;
+  background-color: #232323;
+
+  color: white;
+  font-size: 26rpx;
+  line-height: 56rpx;
+}
+
+.login-button {
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 20rpx 0;
+  text-align: center;
+  border-radius: 42rpx;
+  margin-top: 32rpx;
+  border: solid 1px #323232;
+}
+.login-button3 {
+  color: white;
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 20rpx 0;
+  text-align: center;
+  border-radius: 42rpx;
+  margin-top: 32rpx;
+  background-color: #323232;
+}
+
+.login-button2 {
+  color: white;
+  text-align: center;
+  border-radius: 42rpx;
+  /* background-color: 07c160; */
+  /* border: solid 1px #07c160; */
+}
+
+.login-action-layout {
+  margin-top: 38rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-action-view {
+  color: #888;
+  padding: 6rpx 12rpx;
+  font-size: 30rpx;
+  display: flex;
+}
+.login-title {
+  color: #232323;
+  font-size: 56rpx;
+  font-weight: 700;
+  margin-top: 120rpx;
+  margin-bottom: 24rpx;
+}
+.login-hint {
+  color: #979797;
+  font-size: 28rpx;
+  margin-top: 32rpx;
+}
+.login-alert {
+  color: #676767;
+  font-size: 28rpx;
+  margin-bottom: 48rpx;
+}

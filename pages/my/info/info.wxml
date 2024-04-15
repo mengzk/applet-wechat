@@ -1,0 +1,44 @@
+<!-- -->
+<view class="container">
+	<!-- 顶部栏 -->
+	<view class="top-bg">
+		<image class="top-bg-img" mode="aspectFill" src="/assets/img/top_m.jpeg" />
+		<view class="top-layout">
+			<view class="user-box" bindtap="onTabPress">
+				<view hover-class="a-hover">
+					<image class="user-icon" src="{{user.avatar}}" />
+					<view class="user-name">{{user.nickName}}</view>
+				</view>
+				<view class="user-data-box">
+					<view class="a-row">
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">0<text class="user-tab">收藏</text></view>
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">0<text class="user-tab">点读</text></view>
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">0<text class="user-tab">关注</text></view>
+					</view>
+				</view>
+			</view>
+			<!-- <view class="collect-view" hover-class="a-hover">关注</view> -->
+		</view>
+	</view>
+
+	<!-- tab -->
+	<view class="tab-layout">
+		<block wx:for="{{tabList}}" wx:key="index">
+			<view class="tab-view" bindtap="onChangeTab" data-index="{{index}}">
+				<view class="tab-text{{tabIndex === index ? '':'2'}}">{{item}}</view>
+				<view wx:if="{{tabIndex === index}}" class="tab-line"/>
+			</view>
+		</block>
+	</view>
+	<!-- 内容列表 -->
+	<view class="gridlist">
+		<block wx:for="23456789" wx:key="index">
+			<view class="item-box" bindtap="onPressItem">
+				<view class="item-layout" hover-class="img-hover">
+					<image class="item-img" mode="aspectFill" src="/assets/img/top_m.jpeg" />
+					<view class="item-mark"></view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

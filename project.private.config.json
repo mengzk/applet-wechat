@@ -1,0 +1,71 @@
+{
+  "description": "项目私有配置文件。将覆盖 project.config.json 中的相同字段。",
+  "projectname": "WeChat",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false,
+    "autoAudits": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "login",
+          "pathName": "pages/my/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "vip",
+          "pathName": "pages/my/vip_code/vip",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "register",
+          "pathName": "pages/shop/register/register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "qrcode",
+          "pathName": "pages/my/qrcode/qrcode",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "table",
+          "pathName": "pages/my/table/table",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "staff",
+          "pathName": "pages/my/staff/staff",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<view class="v-input-box">
+  <textarea class="v-box-input" placeholder="{{hint}}" value="{{text}}" bindinput="onInputText" maxlength="{{max}}" bindblur="onBlur" />
+  <text class="v-box-input-count">{{input.length}}/{{max}}</text>
+</view>

@@ -1,0 +1,23 @@
+.next-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 6rpx;
+}
+.item-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+}
+.user-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  background-color: lightblue;
+}
+.cover-img {
+  width: 300rpx;
+  height: 400rpx;
+  border-radius: 16rpx;
+}
+

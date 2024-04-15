@@ -1,0 +1,26 @@
+.qrcode {
+  align-items: center;
+  justify-content: center;
+}
+.qrcode-table-num {
+  color: #232323;
+  font-size: 56rpx;
+  font-weight: 600;
+  margin-bottom: 32rpx;
+}
+.qrcode-box {
+  padding: 32rpx;
+  border-radius: 16rpx;
+  background-color: white;
+}
+
+.qrcode-icon {
+  width: 200px;
+  height: 200px;
+}
+.qrcode-save-hint {
+  color: #979797;
+  font-size: 24rpx;
+  margin-top: 32rpx;
+  margin-bottom: 160rpx;
+}

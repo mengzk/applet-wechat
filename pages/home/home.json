@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+      "ad_banner": "/components/ad_banner/ad_banner",
+      "table_item": "/components/table_item/table"
+  }
+}

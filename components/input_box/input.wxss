@@ -1,0 +1,23 @@
+.v-input-box {
+  height: 320rpx;
+  /* margin: 24rpx 0; */
+  border-radius: 12rpx;
+  background-color: #f3f3f3;
+  position: relative;
+}
+.v-box-input {
+  width: 100%;
+  height: 100%;
+  color: #232323;
+  font-size: 32rpx;
+  padding: 12rpx 16rpx;
+}
+.v-box-input-count {
+  position: absolute;
+  bottom: 12rpx;
+  right: 16rpx;
+  z-index: 3;
+
+  color: #676767;
+  font-size: 24rpx;
+}

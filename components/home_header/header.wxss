@@ -1,0 +1,57 @@
+.home-header-bar {
+  overflow: hidden;
+  --height: 46px;
+  --right: 190rpx;
+  background-color: white;
+}
+.home-header-bar .android {
+  --height: 48px;
+  --right: 222rpx;
+}
+
+.home-header-bar__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  padding-right: var(--right);
+  width: calc(100% - var(--right));
+}
+
+.home-header-bar__inner .home-header-bar__left {
+  width: var(--right);
+  padding-left: 16px;
+  display: flex;
+}
+
+.home-header-bar__inner .home-header-bar_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E3E3E3;
+}
+
+.home-header-bar__inner .home-header-bar__center {
+  font-size: 36rpx;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-header-bar__inner .home-header-bar__right {
+  margin-right: 16px;
+}
+
+.home-header-bar__placeholder {
+  height: var(--height);
+  background: #f8f8f8;
+  position: relative;
+  z-index: 998;
+}

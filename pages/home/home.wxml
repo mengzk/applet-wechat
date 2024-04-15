@@ -1,0 +1,15 @@
+<view class="container home">
+  <!-- <header back="{{1==0}}" icon="{{userIcon}}" binduser="onTabUser" /> -->
+  <view wx:if="{{alertMsg != null}}" class="h-top-alert">
+    <text class="ellip h-top-alert-str">{{alertMsg.data}}</text>
+  </view>
+  <!-- 广告 -->
+  <ad_banner style="margin: 12px 12px;" banners="{{banners}}" />
+  <view class="home-list">
+    <block wx:for="{{items}}" wx:key="item">
+      <view>
+        <table_item item="{{item}}" bindpress="onItemPress" />
+      </view>
+    </block>
+  </view>
+</view>
