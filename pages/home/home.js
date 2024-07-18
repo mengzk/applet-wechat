@@ -22,7 +22,7 @@ Page({
 
   onLoad: function () {
     const that = this;
-    that._querySeatList();
+    // that._querySeatList();
   },
 
   onShow: function () {

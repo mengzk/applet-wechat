@@ -16,7 +16,7 @@ Page({
     user: defUserInfo,
     userId: 0,
     topData: {
-      show: false,
+      show: true,
       card: 0, // 卡
       coupon: 0, // 优惠券
       point: 0, // 积分
