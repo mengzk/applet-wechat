@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "人员管理",
-  "usingComponents": {
-    "add_staff": "/components/add_staff/staff",
-    "empty": "/components/empty/empty"
-  }
-}

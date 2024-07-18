@@ -8,7 +8,7 @@ import Configs from "../../config/index";
 import { getAppToken } from "../store/index";
 
 // 获取地址
-export function getWebPath(host, env = Configs.env) {
+export function getWebPath(host='api', env = Configs.env) {
   const url = HostConfig[env][host];
   return url;
 }
@@ -20,7 +20,7 @@ export function setAppEnv(num = 0) {
 }
 
 // 获取对应请求地址
-export function requestHost(host = 'def', env = Configs.env) {
+export function requestHost(host = 'api', env = Configs.env) {
   const url = HostConfig[env][host];
   return url;
 }

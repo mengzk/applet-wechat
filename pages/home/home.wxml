@@ -7,7 +7,7 @@
   <view class="home-list">
     <block wx:for="{{items}}" wx:key="item">
       <view>
-        <table_item item="{{item}}" bindpress="onItemPress" />
+        <text>回家睡觉觉</text>
       </view>
     </block>
   </view>

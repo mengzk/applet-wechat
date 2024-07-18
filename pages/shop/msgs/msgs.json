@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "消息模版",
-  "usingComponents": {
-    "add_event": "/components/add_event/event",
-    "empty": "/components/empty/empty"
-  }
-}

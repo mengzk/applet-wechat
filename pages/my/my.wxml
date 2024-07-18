@@ -28,9 +28,7 @@
     </view>
   </view>
   <!-- 优惠券领取 -->
-  <view class="activity-box" bindtap="gotoCoupon">
-    <image class="activity-img" mode="center" src="{{bannerUrl}}"/>
-  </view>
+  <ad_banner style="margin: 12px 12px;" banners="{{banners}}"  />
   <!-- 内容列表 -->
   <view class="row label-box">
     <text class="flex label-name">我的服务</text>

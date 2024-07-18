@@ -3,7 +3,6 @@
  * Date: 2022-03-09
  * 网络请求封装
  */
-import Configs from '../../config/index';
 import { mergeHeaders, requestHost, mergeParams } from './config';
 
 let timer_id = 0; // 0可隐藏，1不可隐藏
@@ -39,20 +38,13 @@ function _loading(loading, title = '加载中...') {
   }
 }
 
-/**  网络请求
- * @param {
- *      env: 环境
- *      host: 地址
- *      url: 接口
- *      method: GET/POST
- *      data: 参数
- *      。。。
- * }
+/**  
+ * 网络请求
  */
 export function request({
-  env = Configs.env,
-  host = 'def',
-  url = '',
+  env,
+  host,
+  url,
   method = 'GET',
   data = {},
   header = {},
@@ -104,9 +96,7 @@ export function request({
           loading && _loading(false);
           toast && result.code != 0 && _toast(result.message);
           resolve(result);
-          // console.log(result)
-          if (result.code == -3 || result.code == -4) {
-          }
+          // if (result.code == -3 || result.code == -4) {}
         }
       },
     });
@@ -161,10 +151,12 @@ export function uploads(files = []) {
             });
             data.all = data.imgs.length == data.count;
           }
+          _loading(false, '');
           resolve({ code: 0, data });
         })
         .catch((err) => {
           console.log(err);
+          _loading(false, '');
           resolve({ code: -1003, data: null });
         });
     });

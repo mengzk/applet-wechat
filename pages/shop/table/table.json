@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "桌位管理",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "add_table": "/components/add_table/table",
-    "empty": "/components/empty/empty"
-  }
-}

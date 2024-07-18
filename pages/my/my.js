@@ -22,6 +22,7 @@ Page({
       point: 0, // 积分
       level: '普通会员',
     },
+    banners: ['/assets/img/home_banner.png'],
     menulist: [
       // {
       //   id: 0,

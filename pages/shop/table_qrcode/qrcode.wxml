@@ -1,7 +1,0 @@
-<view class="container qrcode">
-  <text class="qrcode-table-num">{{num}}号桌</text>
-  <view class="qrcode-box" bindlongtap="onSaveImg">
-    <canvas class="qrcode-icon" canvas-id="qrcode_cv" id="qrcode_cv" />
-  </view>
-  <text class="qrcode-save-hint">长按二维码可以保存到相册哦</text>
-</view>

@@ -8,11 +8,8 @@
     "pages/my/qrcode/qrcode",
     "pages/my/setting/setting",
     "pages/my/feedback/feedback",
-    "pages/shop/register/register",
-    "pages/shop/staff/staff",
-    "pages/shop/table/table",
-    "pages/shop/msgs/msgs",
-    "pages/shop/table_qrcode/qrcode"
+    "pages/promotion/index",
+    "pages/activity/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
