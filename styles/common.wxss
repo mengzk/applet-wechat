@@ -1,0 +1,42 @@
+
+body {
+  min-height: 100vh;
+  color: #232323;
+  background: #f3f3f3;
+  line-height: 1.2;
+  /* font-family: ; */
+  font-size: 28rpx;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.status {
+  color: #979797;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.status2 {
+  color: #00B42A;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.status3 {
+  color: #3478F6;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.status4 {
+  color: #FF6600;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.status5 {
+  color: #F2453A;
+  font-size: 28rpx;
+  font-weight: 600;
+}

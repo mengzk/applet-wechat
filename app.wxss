@@ -7,34 +7,51 @@
 
   color: #323232;
   font-size: 28rpx;
-  font-family: PingFang SC;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
+  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Medium; */
 }
 
 .flex {
   flex: 1;
 }
-
-.ai-center {
-  align-items: center;
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.jc-center {
-  justify-content: center;
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .center {
   align-items: center;
   justify-content: center;
+}
+.ai-center {
+  align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 12rpx 0 rgba(0, 0, 0, 0.1);
 }
 
 .input-hint {
@@ -96,12 +113,7 @@
   background-color: white;
   box-shadow: 6rpx 8rpx 12rpx 8rpx rgba(73, 4, 4, 0.1);
 }
-.ellip {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-}
+
 .hover {
   /* position: relative; */
   opacity: 0.9;

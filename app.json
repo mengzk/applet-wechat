@@ -1,16 +1,46 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/launch/index",
     "pages/home/home",
     "pages/my/my",
-    "pages/my/about/about",
     "pages/my/login/login",
     "pages/my/qrcode/qrcode",
-    "pages/my/setting/setting",
-    "pages/my/feedback/feedback",
-    "pages/promotion/index",
-    "pages/activity/index"
+    "pages/promotion/index"
   ],
+  "subpackages": [
+    {
+      "root": "packAccount",
+      "name": "account",
+      "pages": [
+        "pages/about/about",
+        "pages/feedback/feedback",
+        "pages/info/info",
+        "pages/reset/reset",
+        "pages/setting/setting"
+      ]
+    },
+    {
+      "root": "packOrder",
+      "name": "order",
+      "pages": [
+        "pages/log/log"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/home/home": {
+      "network": "all",
+      "packages": [
+        "account"
+      ]
+    },
+    "pages/my/my": {
+      "network": "all",
+      "packages": [
+        "order"
+      ]
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

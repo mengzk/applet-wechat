@@ -1,0 +1,13 @@
+.launch {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.launch-text {
+  color: #232323;
+  font-size: 56rpx;
+  letter-spacing: 3px;
+}

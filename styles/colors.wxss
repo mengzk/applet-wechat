@@ -9,3 +9,34 @@
 .bg_green {
   background-color: green;
 }
+
+/* 文本颜色 */
+.tc1 {
+  color: #232323;
+}
+
+.tc2 {
+  color: #676767;
+}
+
+.tc3 {
+  color: #323232;
+}
+
+.tc4 {
+  color: #979797;
+}
+
+.price {
+  color: #ff4d4f;
+}
+
+.error {
+  color: #ff4d4f;
+}
+.warn {
+  color: #faad14;
+}
+.success {
+  color: #52c41a;
+}

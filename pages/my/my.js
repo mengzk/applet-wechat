@@ -12,7 +12,6 @@ const defUserInfo = { icon: '/assets/icon/user.png', nickname: '立即登录' };
 Page({
   data: {
     isLogin: false,
-    bannerUrl: '/assets/img/home_banner.png',
     user: defUserInfo,
     userId: 0,
     topData: {
