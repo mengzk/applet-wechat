@@ -18,12 +18,12 @@
   border-radius: 140px;
   -webkit-animation: run3 6s linear 0s infinite;
   /* -webkit-animation: name duration timing-function delay iteration_count direction;
-name: 是@-webkit-keyframes 中需要指定的方法，用来执行动画。
-duration: 动画一个周期执行的时长。
-timing-function: 动画执行的效果，可以是线性的，也可以是"快速进入慢速出来"等。
-delay: 动画延时执行的时长。
-iteration_count: 动画循环执行次数，如果是infinite，则无限执行。
-direction: 动画执行方向。 */
+  name: 是@-webkit-keyframes 中需要指定的方法，用来执行动画。
+  duration: 动画一个周期执行的时长。
+  timing-function: 动画执行的效果，可以是线性的，也可以是"快速进入慢速出来"等。
+  delay: 动画延时执行的时长。
+  iteration_count: 动画循环执行次数，如果是infinite，则无限执行。
+  direction: 动画执行方向。 */
 }
 @-webkit-keyframes run3 {
   from {

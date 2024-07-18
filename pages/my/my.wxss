@@ -78,9 +78,8 @@
 }
 .activity-img {
   width: 100%;
-  height: 200rpx;
+  max-height: 200rpx;
   border-radius: 16rpx;
-  object-fit: cover;
 }
 .label-box {
   height: 96rpx;

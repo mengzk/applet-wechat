@@ -1,6 +1,6 @@
 <view class="container">
   <view class="login-layout">
-    <view class="login-title">欢迎使用 E呼</view>
+    <view class="login-title">欢迎使用 小程序</view>
 
     <text class="login-alert">登录即代表您已阅读并同意<text style="color: #232323; font-weight: 600;">《用户协议》</text></text>
 

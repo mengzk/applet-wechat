@@ -1,5 +1,4 @@
 <view class="container home">
-  <!-- <header back="{{1==0}}" icon="{{userIcon}}" binduser="onTabUser" /> -->
   <view wx:if="{{alertMsg != null}}" class="h-top-alert">
     <text class="ellip h-top-alert-str">{{alertMsg.data}}</text>
   </view>

@@ -29,7 +29,7 @@
   </view>
   <!-- 优惠券领取 -->
   <view class="activity-box" bindtap="gotoCoupon">
-    <image class="activity-img" mode="widthFix" src="{{bannerUrl}}"/>
+    <image class="activity-img" mode="center" src="{{bannerUrl}}"/>
   </view>
   <!-- 内容列表 -->
   <view class="row label-box">
