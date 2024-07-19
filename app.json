@@ -2,10 +2,10 @@
   "pages": [
     "pages/launch/index",
     "pages/home/home",
+    "pages/welfare/index",
     "pages/my/my",
     "pages/my/login/login",
-    "pages/my/qrcode/qrcode",
-    "pages/promotion/index"
+    "pages/my/qrcode/qrcode"
   ],
   "subpackages": [
     {
@@ -41,22 +41,24 @@
       ]
     }
   },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "App",
-    "navigationBarTextStyle": "black"
-  },
   "tabBar": {
+    "custom": true,
     "color": "#979797",
     "selectedColor": "#232323",
     "borderStyle": "black",
+    "usingComponents": {},
     "list": [
       {
         "text": "首页",
         "pagePath": "pages/home/home",
         "iconPath": "/assets/icon/tab_home_off.png",
         "selectedIconPath": "/assets/icon/tab_home_on.png"
+      },
+      {
+        "text": "福利",
+        "pagePath": "pages/welfare/index",
+        "iconPath": "/assets/icon/tab_welf_off.png",
+        "selectedIconPath": "/assets/icon/tab_welf_on.png"
       },
       {
         "text": "我的",
@@ -66,11 +68,20 @@
       }
     ]
   },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "App",
+    "navigationBarTextStyle": "black"
+  },
   "networkTimeout": {
     "request": 20000,
     "connectSocket": 20000,
     "uploadFile": 30000
   },
+  "requiredPrivateInfos": [ 
+    "getLocation"
+  ],
   "permission": {
     "scope.userLocation": {
       "desc": "用于选择商家门店地址"
